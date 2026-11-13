@@ -527,6 +527,28 @@ body[data-screen="home"] .entry-options .entry-choice:hover{background:linear-gr
 body[data-screen="journey"][data-step="1"] .ambient-lights:before{background:linear-gradient(180deg,#a326451a 0%,#9e1c50b3 12%,#ae285899 18%,transparent 36%),radial-gradient(ellipse 53vw 19vh at 50% 22%,#a41b51b3 0%,#b0284f75 50%,transparent 100%),linear-gradient(180deg,#ae305412 0%,#b6314826 29%,transparent 46%,#b219588c 66%,#99184bad 100%)}
 body[data-screen="journey"][data-step="1"] #beginAgain{background:#a4234fb3}
 body[data-screen="journey"][data-step="1"] #flowNext{background:linear-gradient(115deg,#a31a578c,#a6294a80)!important}
+
+/* Owner requests a luminous canvas, white edge highlights and lighter glass. */
+body:is([data-screen="home"],[data-screen="journey"][data-step="1"]){background-color:#f58eab}
+body:is([data-screen="home"],[data-screen="journey"][data-step="1"]) .ambient-lights{background:radial-gradient(ellipse at 2% 20%,#ffe6b8 0%,transparent 47%),radial-gradient(ellipse at 100% 0%,#ffd4b8 0%,transparent 52%),radial-gradient(ellipse at 73% 57%,#ff84ad 0%,transparent 62%),linear-gradient(155deg,#ffc49b,#ff9eb1 48%,#f887b9)!important}
+body:is([data-screen="home"],[data-screen="journey"][data-step="1"]) .ambient-aqua{background:radial-gradient(ellipse at 29% 94%,#f77fb2 0%,#ffa4c1a6 31%,transparent 65%)!important}
+body:is([data-screen="home"],[data-screen="journey"][data-step="1"]) .ambient-lights:before{background:radial-gradient(ellipse at 108% 43%,#fffdf4e0 0%,#fff7df80 20%,transparent 49%),radial-gradient(ellipse at -5% 96%,#fff6d7a6 0%,#ffd9b35c 22%,transparent 47%),linear-gradient(180deg,#bb345b1f 0%,transparent 34%,#ffd9d029 100%)}
+body:is([data-screen="home"],[data-screen="journey"][data-step="1"]) .intro{width:100%;text-align:center}
+body:is([data-screen="home"],[data-screen="journey"][data-step="1"]) .intro #title,body:is([data-screen="home"],[data-screen="journey"][data-step="1"]) .intro #subtitle{width:100%;max-width:none;margin-left:auto;margin-right:auto;text-align:center}
+body:is([data-screen="home"],[data-screen="journey"][data-step="1"]) .intro #title{text-shadow:0 1px 5px #a53c5859}
+body:is([data-screen="home"],[data-screen="journey"][data-step="1"]) .intro #subtitle{font-weight:400;text-shadow:0 1px 3px #92334e99}
+body[data-screen="home"] .entry-options .entry-choice{background:linear-gradient(115deg,#ffffff40,#fff6ed1f)!important;border:0!important}
+body[data-screen="home"] .entry-options .entry-choice:hover{background:linear-gradient(115deg,#ffffff54,#fff6ed30)!important}
+body[data-screen="home"] .entry-choice b{font-weight:500;text-shadow:0 1px 4px #92334e80}
+body[data-screen="home"] .entry-choice small{font-weight:400;text-shadow:0 1px 3px #92334e99}
+body[data-screen="home"] .entry-choice .entry-moon{opacity:1;filter:drop-shadow(0 1px 2px #a4416666)}
+body[data-screen="home"] .entry-choice .entry-arrow{background:#ffffff24;filter:drop-shadow(0 1px 2px #a4416640)}
+body:is([data-screen="home"],[data-screen="journey"][data-step="1"]) footer>span:nth-child(2){font-weight:400;text-shadow:0 1px 3px #92334e99}
+body:is([data-screen="home"],[data-screen="journey"][data-step="1"]) .ambient-toggle{background:#ffffff18;border-color:#ffffff4d;filter:drop-shadow(0 1px 2px #a4416640)}
+body[data-screen="journey"][data-step="1"] .steps{text-shadow:0 1px 3px #92334e99}
+body[data-screen="journey"][data-step="1"] #beginAgain{background:#ffffff24;text-shadow:0 1px 3px #92334e99}
+body[data-screen="journey"][data-step="1"] #flowNext{background:linear-gradient(115deg,#ffffff40,#fff6ed1f)!important;text-shadow:0 1px 3px #92334e99}
+@supports not (backdrop-filter:blur(1px)){body[data-screen="home"] .entry-options .entry-choice{background:#fff4ed40!important}}
 </style><!-- Noto Serif TC headline subset; SIL Open Font License 1.1
 Copyright 2012 Google Inc. All Rights Reserved.
 
